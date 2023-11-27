@@ -13,23 +13,30 @@
 
 
 :root{
+
+    --clr-neutral-800: hsl(0, 0%, 15%);
+    --clr-neutral-100: hsl(0, 0%, 100%);
+
     --ff-regular: biogem--regular;
     --ff-black: biogem--black;
+
+
 }
 
 *, *::before, *::after {
     box-sizing: border-box;
-    font-family: var(--ff-black);
   }
 
   * {
     margin: 0;
+
   }
 
   body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     background-color: black;
+    font-family: var(--ff-regular);
   }
 
   img, picture, video, canvas, svg {
@@ -47,4 +54,9 @@
 
   #root, #__next {
     isolation: isolate;
+  }
+
+  button{
+    background: none;
+    border: none;
   }

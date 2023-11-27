@@ -13,54 +13,45 @@
 <body>
     <div class="hero">
         <header>
-            <div>
-                <img src="./images/Icons/rovic--favicon.svg" alt="" srcset="">
-            </div>
-            <div>
+            <div class="header--navContainer">
                 <div>
-                    <button>
-                        Home
-                    </button>
+                    <a href="#">
+                        <img src="./images/Icons/rovic--favicon.svg" alt="homepage">
+                    </a>     
                 </div>
                 <div>
-                    <button>
-                        My Creations
-                    </button>
+                    <button> Home</button>
+                </div>          
+                <div>
+                    <button> My Creations </button>
                 </div>
                 <div>
-                    <button>
-                        About Me
-                    </button>
+                    <button>About Me</button>
                 </div>
             </div>
-            <div>
+           
+            <div class="header--navContainer">
                 <div>
-                    <button>
-                        <img src="#" alt="contact me">
+                    <button class="header__button--contact">
+                        <img src="images/Icons/contact.svg" alt="contact me please">
                         Contact Me
                     </button>
                 </div>
                 <div>
                     <a href="./images/Icons/rovic--favicon.svg" download="">
-                        <button>
+                        <button class="header__primary--button">
                             <span>Download my resume</span>
                         </button>
                     </a>
                 </div>
             </div>
         </header>
-        <section>
+        <section class="hero--main">
+            <span> ESCAPE </span>
         </section>
     </div>
     <main>
 
     </main>
-    <script>
-        $(document).ready(function(){
-	$('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
-		$(this).toggleClass('open');
-	});
-});
-    </script>
 </body>
 </html>

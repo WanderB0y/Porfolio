@@ -1,0 +1,32 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 32px;
+    align-items: center;
+    /* background-color: lightblue; */
+    font-family: var(--ff-regular);
+    font-size: 20px;
+}
+.header--navContainer:first-child{
+    min-width: fit-content;
+}
+
+.header--navContainer{
+    align-items: center;
+    display: flex;
+    gap: 24px;
+}
+
+.header__primary--button{
+    background-color: var(--clr-neutral-800);
+    color: var(--clr-neutral-100);
+    padding: 12px 32px;
+    border-radius: 9999px;
+    margin: 6px 0;
+    min-width: 182px;
+}
+.header__button--contact{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
