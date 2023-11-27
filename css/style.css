@@ -16,12 +16,31 @@
 
     --clr-neutral-800: hsl(0, 0%, 15%);
     --clr-neutral-100: hsl(0, 0%, 100%);
+    --clr-accent-400: hsl(0, 100%, 60%);
 
     --ff-regular: biogem--regular;
     --ff-black: biogem--black;
 
-
 }
+
+
+/* Utility CLasses */
+
+.txt-accent-400{
+  color: var(--clr-accent-400);
+}
+.txt-neutral-800{
+  color: var(--clr-neutral-800);
+}
+.font-regular{
+  font-family: var(--ff-regular);
+}
+
+.font-bold{
+  font-family: var(--ff-black);
+}
+
+
 
 *, *::before, *::after {
     box-sizing: border-box;

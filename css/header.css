@@ -4,7 +4,6 @@ header{
     padding: 0 32px;
     align-items: center;
     /* background-color: lightblue; */
-    font-family: var(--ff-regular);
     font-size: 20px;
 }
 .header--navContainer:first-child{
