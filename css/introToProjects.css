@@ -1,0 +1,10 @@
+.introToProjects--container{
+    color: white;
+    max-width: 1600px;
+    text-align: right;
+    font-size: 60px;
+}
+
+.introToProjects--container p{
+    max-width: 682px;
+}

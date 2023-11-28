@@ -1,0 +1,15 @@
+.overview--container{
+    color: white;
+    margin-top: 160px;
+    padding: 0 5vw;
+    max-width: 1600px;
+}
+
+.overview--container h2{
+    font-size: 60px;
+    margin-bottom: 32px;
+}
+.overview--container p {
+    font-size: 24px;
+    max-width: 472px;
+}
