@@ -120,7 +120,6 @@
 
 @media (max-width: 678px) {
     .hero--mainContainer{
-        padding: 0 14px 80px 14px;
         gap: 0;
     }
     .hero--upper > span {
