@@ -3,8 +3,15 @@
     max-width: 1600px;
     text-align: right;
     font-size: 60px;
+    margin-top: 160px;
 }
 
 .introToProjects--container p{
     max-width: 682px;
+}
+
+@media (max-width: 678px) {
+    .introToProjects--container p{
+        font-size: 32px;
+    }
 }

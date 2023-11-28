@@ -139,7 +139,7 @@
         flex-direction: column;
     }
     .hero--lower{
-        font-size: 15.7vw;
+        font-size: 14vw;
     }
     .hero__upper--textLink{
         font-size: 2.4vw;
@@ -148,6 +148,6 @@
 
 @media (max-width: 478px) {
     .hero--lower{
-        font-size: 15vw;
+        font-size: 13vw;
     }
 }

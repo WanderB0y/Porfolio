@@ -24,11 +24,15 @@
     --ff-regular: biogem--regular;
     --ff-black: biogem--black;
 
+    --reboot-line-height: 86%;
+
 }
 
 
 /* Utility CLasses */
-
+.reboot-line-height{
+  line-height: var(--reboot-line-height);
+}
 .txt-accent-400{
   color: var(--clr-accent-400);
 }
