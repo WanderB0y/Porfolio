@@ -1,23 +1,26 @@
 .hero{
     background-color: white;
     margin:16px 16px;
-    max-width: 1440px;
+    max-width: 1600px;
     border-radius: 24px;
     overflow: hidden;
     height: fit-content;
 }
-.hero--main{
+.hero--mainContainer{
     height: fit-content;
     margin-top: 16px;
     display: flex;
     flex-direction: column;
-    padding: 0 12px;
+
+    gap: 16px;
+    height: 100%;
+    justify-content: center;
+    padding: 0 24px;
 }
 .hero--upper{
     display: flex;
     gap: 16px;
     max-height: 328px;
-    margin-bottom: 24px;
 }
 .hero--upper > span{
     font-size: 34vw;
@@ -57,8 +60,11 @@
 
 
 @media (min-width: 1464px) {
+    .hero--upper{
+        max-height: 380px;
+    }
     .hero--upper > span{
-        font-size: 494px;
+        font-size: 564px;
     }
     .hero{
         margin: 16px auto;
@@ -74,9 +80,14 @@
     }
 
 }
+@media (max-width: 904px) and (min-width:678px) {
+    .hero__upper--videoContainer{
+        flex-direction: column;
+    }
+}
 @media (max-width: 1028px) {
     .hero{
-        height: 100vh;
+        height: 80vh;
     }
     .hero--main{
         height: 100%;
@@ -105,26 +116,35 @@
 }
 
 @media (max-width: 678px) {
+    .hero--mainContainer{
+        gap: 0;
+    }
+    .hero--upper > span {
+        font-size: 36vw;
+    }
     .hero__upper--videoContainer > span{
         max-width: 72px;
+        font-size: 14px;
     }
 
     .hero__upper--rightSection{
         flex-direction: row;
     }
-    video{
-        width: 60px;
-        height: 33px;
-    }
 
     .hero--upper{
-        gap: 4px;
+        gap: 12px;
         flex-direction: column;
     }
     .hero--lower{
-        font-size: 15vw;
+        font-size: 14.6vw;
     }
     .hero__upper--textLink{
         font-size: 2.4vw;
+    }
+}
+
+@media (max-width: 404px) {
+    .hero--lower{
+        font-size: 13.7vw;
     }
 }
