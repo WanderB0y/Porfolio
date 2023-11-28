@@ -1,11 +1,7 @@
 .name--container{
-    width: 100%;
-    padding: 0 5vw;
-    margin-top: 160px;
     display: flex;
     flex-direction: column;
     color: white;
-    max-width: 1600px;
 }
 .name--container > span, .name--middle > span {
     font-size: 112px;

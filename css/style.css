@@ -4,6 +4,7 @@
 @import url("./name.css");
 @import url("./overview.css");
 @import url("./introToProjects.css");
+@import url("./projects.css");
 
 @font-face {
     font-family: biogem--black;
@@ -27,7 +28,11 @@
     --reboot-line-height: 86%;
 
 }
-
+.container{
+  padding: 0 5vw;
+  max-width: 1600px;
+  margin: 160px auto 0 auto;
+}
 
 /* Utility CLasses */
 .reboot-line-height{

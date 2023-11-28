@@ -1,0 +1,6 @@
+.projects--container{
+    background-color: var(--clr-neutral-100);
+    color: var(--clr-neutral-800);
+    height: 700px;
+    border-radius: 24px;
+}

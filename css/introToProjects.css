@@ -1,9 +1,9 @@
 .introToProjects--container{
     color: white;
-    max-width: 1600px;
     text-align: right;
     font-size: 60px;
-    margin-top: 160px;
+    display: flex;
+    justify-content: end;
 }
 
 .introToProjects--container p{
