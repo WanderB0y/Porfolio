@@ -23,7 +23,6 @@
     font-size: 34vw;
     line-height: 86%;
     height: 23vw;
-    
 }
 .hero__upper--rightSection{
     padding: 4px 0 8px 0;
@@ -58,6 +57,9 @@
 
 
 @media (min-width: 1464px) {
+    .hero--upper > span{
+        font-size: 494px;
+    }
     .hero{
         margin: 16px auto;
     }
@@ -70,6 +72,7 @@
     .hero__upper--textLink{
         font-size: 24px;
     }
+
 }
 @media (max-width: 1028px) {
     .hero{
