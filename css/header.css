@@ -9,6 +9,9 @@ header{
 .header--navContainer:first-child{
     min-width: fit-content;
 }
+.header__hamburger--menu{
+    display: none;
+}
 
 .header--navContainer{
     align-items: center;
@@ -24,8 +27,29 @@ header{
     margin: 6px 0;
     min-width: 182px;
 }
-.header__button--contact{
+
+.header__button--contact button{
     display: flex;
     align-items: center;
     gap: 8px;
+}
+
+@media (max-width: 758px) {
+    header{
+        padding: 0 12px;
+    }
+    
+    .header--navContainer{
+        gap: 16px;
+    }
+    .header__nav--links{
+        display: none;
+    }
+    .header__hamburger--menu{
+        display: inline;
+    }
+    .header__button--contact{
+        display: none;
+    }
+
 }

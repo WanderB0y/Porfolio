@@ -1,53 +1,57 @@
 .hero{
     background-color: white;
     margin:16px 16px;
-    height: 92vh;
     max-width: 1440px;
     border-radius: 24px;
     overflow: hidden;
 
 }
 .hero--main{
-    display: inline;
-    margin-top: 80px;
+    margin-top: 16px;
 }
 .hero--upper{
     display: flex;
-    gap: 32px;
+    gap: 16px;
+    max-height: 328px;
+    margin-bottom: 24px;
 }
 .hero--upper > span{
     font-size: 34vw;
     line-height: 86%;
     height: 23vw;
-    margin-left: 16px;
+    margin-left: 12px;
 }
 .hero__upper--rightSection{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+    padding: 4px 0 8px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
 }
-.hero__upper--textLink{
-    align-self: end;
-    font-size: 24px;
-    text-decoration: underline;
-}
+
 .hero__upper--videoContainer{
     display: flex;
     gap: 16px;
-    align-items: start;
+    max-height: fit-content;
 }
 .hero__upper--videoContainer > span{
-    font-size: 18px;
+    font-size: 1.7vw;
     line-height: 94%;
-    width: 87px;
     text-align: left;
     margin-top: 6px;
-
+    max-width: 96px;
+}
+.hero__upper--textLink{
+    align-self: end;
+    font-size: 1.8vw;
+    text-decoration: underline;
+    line-height: 94%;
 }
 .hero--lower{
-    font-size: 16vw;
+    font-size: 16.6vw;
     height: 6vw;
-    margin-left: 16px;
-    line-height: 94%;
+    margin-left: 12px;
+    line-height: 80%;
 }
 
 
@@ -55,4 +59,63 @@
     .hero{
         margin: 16px auto;
     }
+    .hero--lower{
+        font-size: 248px;
+    }
+    .hero--upper > span{
+        font-size: 496px;
+    }
+    .hero__upper--videoContainer > span{
+        font-size: 18px;
+    }
+    .hero__upper--textLink{
+        font-size: 24px;
+
+    }
+}
+@media (max-width: 1028px) {
+    .hero--upper{
+        margin-bottom: 12px;
+    }
+    .hero__upper--textLink{
+        font-size: 16px;
+    }
+    video{
+        width: 96px;
+        height: 54px;
+    }
+    .hero--main{
+        margin-top: 4px;
+    }
+    .hero__upper--rightSection{
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 678px) {
+    .hero__upper--rightSection{
+        padding: 6px 0 0 0;
+    }
+    video{
+        width: 60px;
+        height: 33px;
+    }
+    .hero__upper--videoContainer{
+        flex-direction: column;
+        gap: 0;
+    }
+    .hero--upper{
+        gap: 4px;
+    }
+    .hero--lower{
+        font-size: 15vw;
+    }
+    .hero__upper--textLink{
+        font-size: 2.4vw;
+    }
+    .hero--upper > span{
+        font-size: 34vw;
+        line-height: 93%;
+    }
+
 }
