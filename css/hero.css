@@ -4,10 +4,14 @@
     max-width: 1440px;
     border-radius: 24px;
     overflow: hidden;
-
+    height: fit-content;
 }
 .hero--main{
+    height: fit-content;
     margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 12px;
 }
 .hero--upper{
     display: flex;
@@ -19,7 +23,7 @@
     font-size: 34vw;
     line-height: 86%;
     height: 23vw;
-    margin-left: 12px;
+    
 }
 .hero__upper--rightSection{
     padding: 4px 0 8px 0;
@@ -31,7 +35,7 @@
 
 .hero__upper--videoContainer{
     display: flex;
-    gap: 16px;
+    gap: 12px;
     max-height: fit-content;
 }
 .hero__upper--videoContainer > span{
@@ -48,10 +52,8 @@
     line-height: 94%;
 }
 .hero--lower{
-    font-size: 16.6vw;
-    height: 6vw;
-    margin-left: 12px;
-    line-height: 80%;
+    font-size: 16.4vw;
+    line-height: 86%;
 }
 
 
@@ -62,18 +64,22 @@
     .hero--lower{
         font-size: 248px;
     }
-    .hero--upper > span{
-        font-size: 496px;
-    }
     .hero__upper--videoContainer > span{
         font-size: 18px;
     }
     .hero__upper--textLink{
         font-size: 24px;
-
     }
 }
 @media (max-width: 1028px) {
+    .hero{
+        height: 100vh;
+    }
+    .hero--main{
+        height: 100%;
+        justify-content: center;
+        padding-bottom: 48px;
+    }
     .hero--upper{
         margin-bottom: 12px;
     }
@@ -90,22 +96,27 @@
     .hero__upper--rightSection{
         padding-bottom: 0;
     }
+    .hero--lower{
+        font-size: 15vw;
+    }
 }
 
 @media (max-width: 678px) {
+    .hero__upper--videoContainer > span{
+        max-width: 72px;
+    }
+
     .hero__upper--rightSection{
-        padding: 6px 0 0 0;
+        flex-direction: row;
     }
     video{
         width: 60px;
         height: 33px;
     }
-    .hero__upper--videoContainer{
-        flex-direction: column;
-        gap: 0;
-    }
+
     .hero--upper{
         gap: 4px;
+        flex-direction: column;
     }
     .hero--lower{
         font-size: 15vw;
@@ -113,9 +124,4 @@
     .hero__upper--textLink{
         font-size: 2.4vw;
     }
-    .hero--upper > span{
-        font-size: 34vw;
-        line-height: 93%;
-    }
-
 }
