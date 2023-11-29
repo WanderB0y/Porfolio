@@ -28,13 +28,20 @@
     --reboot-line-height: 86%;
 
 }
+
+
+/* Utility CLasses */
+.flex-group-techStacks{
+  display: flex;
+  gap: 12px;
+}
+
 .container{
   padding: 0 5vw;
   max-width: 1600px;
   margin: 160px auto 0 auto;
 }
 
-/* Utility CLasses */
 .reboot-line-height{
   line-height: var(--reboot-line-height);
 }
@@ -90,4 +97,8 @@
   button{
     background: none;
     border: none;
+  }
+  li, ul{
+    list-style: none;
+    padding: 0;
   }
